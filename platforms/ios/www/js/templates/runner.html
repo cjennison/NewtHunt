@@ -1,0 +1,38 @@
+
+<ion-view title="Runner">      
+  <ion-content padding="true">
+      
+  <div class="bar bar-header bar-light">
+    <button class="button button-clear button-assertive" ui-sref='main'>Cancel</button>
+    <button class="button button-clear button-assertive" ></button>
+    <button class="button button-clear button-assertive" ng-click='reset()'>Reset</button>
+  </div>
+
+      <div class="card time-counter" style='margin-top:60px'>
+        <div class="item item-text-wrap">
+          <b>Time Walked:</b> <span style='float:right'>{{time}}</span>
+        </div>
+      </div>
+
+      <div class="card" >
+        <div class="item item-text-wrap">
+          <b>Distance Traveled:</b> <span style='float:right'>{{dist_traveled | number:2}} <div class='button button-clear button-positive' style='margin-top: -12px;' ng-click='changeUnits()'>{{dist_unit}}</div></span> 
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="item item-text-wrap">
+          <b>Newts Found:</b> <span style='float:right'>{{newts}} <div class='button button-clear button-royal' style='margin-top: -12px;'>newts</div></span> 
+        </div>
+      </div>
+
+      <div class='button button-full button-calm' ng-click="newtFound()">Found a newt!</div>
+      <div class='fx-fade-up one-up' ng-show="spawn == 1">{{spawnText}}</div>
+
+  </ion-content>
+  <div class="bar bar-footer bar-clear" style='bottom:15px'>
+    <button class="button button-block button-positive" ng-click='saveData()'>
+      Done!
+    </button>
+  </div>
+</ion-view>

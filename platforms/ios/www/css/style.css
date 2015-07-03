@@ -1,1 +1,44 @@
 /* Empty. Add your own CSS if you like */
+.menu-content, .bar-footer{
+  /*background: #842959; */
+}
+
+.title{
+  text-align: center;
+  margin-top:10px;
+  /*color:#D4F0A1;*/
+}
+
+
+
+.circle{
+  width:100px;
+  height:100px;
+  cursor:pointer;
+  border-radius:50px;
+  font-size:20px;
+  color:#fff;
+  line-height:100px;
+  text-align:center;
+  background:#000;
+}
+
+.circle:hover{
+  background:#444;
+}
+
+#start-button{
+  position: absolute;
+  margin-top:20%;
+  left: 50%;
+  text-align: center;
+  margin-left: -50px;
+}
+
+.one-up{
+  color:white;
+  position: relative;
+  float:right;
+  right:10%;
+  top:-45px;
+}
